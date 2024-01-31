@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "dark-01": "#0e1133",
+        "dark-01": "#1E293B",
         "dark-02": "#505056",
         "dark-03": "#009DE4",
       },
