@@ -4,14 +4,14 @@ const Footer = () => {
       <footer className="footer md:p-6 text-white max-w-7xl mx-auto">
         <aside>
           <img
-            src="https://i.ibb.co/6yM0PsD/protfili-logo.png"
+            src="https://i.ibb.co/8YwLmY0/6996098-removebg-preview.png"
             alt=""
             className="w-20"
           />
           <p>
-            <span className="text-xl">Zulkar Naeem Rabby</span>
+            <span className="text-xl">Tanvir Ahmaed Sohan</span>
             <br />
-            <address>Web Developer</address>
+            <address>Degital Merketer</address>
           </p>
         </aside>
         <nav className="">

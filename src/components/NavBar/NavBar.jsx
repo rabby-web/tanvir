@@ -23,54 +23,74 @@ const NavBar = () => {
   const handleThemeSwich = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
-
+  // dark:text-sky-500 text-indigo-600
   const navLinks = (
     <>
-      <li className=" text-dark-01 text-lg font-medium hover:text-dark-03 hover:underline dark:text-white">
+      <li className=" text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending " : isActive ? "text-dark-03 " : ""
+            isPending
+              ? "pending "
+              : isActive
+              ? "dark:text-sky-500 text-indigo-600"
+              : ""
           }
         >
           Home
         </NavLink>
       </li>
-      <li className="text-dark-01 text-lg font-medium hover:text-dark-03 hover:underline dark:text-white">
+      <li className="text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
         <NavLink
           to="/about"
           className={({ isActive, isPending }) =>
-            isPending ? "pending " : isActive ? "text-dark-03 " : ""
+            isPending
+              ? "pending "
+              : isActive
+              ? "dark:text-sky-500 text-indigo-600"
+              : ""
           }
         >
           About
         </NavLink>
       </li>
-      <li className=" text-dark-01 text-lg font-medium hover:text-dark-03 hover:underline dark:text-white">
+      <li className=" text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
         <NavLink
           to="/skill"
           className={({ isActive, isPending }) =>
-            isPending ? "pending " : isActive ? "text-dark-03 " : ""
+            isPending
+              ? "pending "
+              : isActive
+              ? "dark:text-sky-500 text-indigo-600"
+              : ""
           }
         >
           Skill
         </NavLink>
       </li>
-      <li className=" text-dark-01 text-lg font-medium hover:text-dark-03 hover:underline dark:text-white">
+      <li className=" text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
         <NavLink
           to="/project"
           className={({ isActive, isPending }) =>
-            isPending ? "pending " : isActive ? "text-dark-03 " : ""
+            isPending
+              ? "pending "
+              : isActive
+              ? "dark:text-sky-500 text-indigo-600"
+              : ""
           }
         >
           Project
         </NavLink>
       </li>
-      <li className=" text-dark-01 text-lg font-medium hover:text-dark-03 hover:underline dark:text-white">
+      <li className=" text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
         <NavLink
           to="/contract"
           className={({ isActive, isPending }) =>
-            isPending ? "pending " : isActive ? "text-dark-03 " : ""
+            isPending
+              ? "pending "
+              : isActive
+              ? "dark:text-sky-500 text-indigo-600"
+              : ""
           }
         >
           Contract
@@ -88,7 +108,7 @@ const NavBar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block w-8 h-8 stroke-current dark:text-white "
+                className="inline-block w-12 h-8 stroke-current dark:text-white "
               >
                 <path
                   strokeLinecap="round"
@@ -100,20 +120,89 @@ const NavBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content   mt-3 z-[1] p-3 shadow dark:bg-dark-01 bg-dark-03 rounded-box w-52"
+              className="menu menu-sm dropdown-content   mt-3 z-[1] p-4 shadow dark:bg-dark-01 bg-white rounded-box w-64 text-2xl "
             >
-              {navLinks}
+              <li className=" text-dark-01 text-2xl hover:border-b-2 font-medium hover:text-sky-500 hover:underline dark:text-white">
+                <NavLink
+                  to="/"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending text-xl"
+                      : isActive
+                      ? "dark:text-sky-500 text-indigo-600 text-xl"
+                      : "text-xl"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="text-dark-01 hover:border-b-2 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
+                <NavLink
+                  to="/about"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending text-xl"
+                      : isActive
+                      ? "dark:text-sky-500 text-indigo-600 text-xl"
+                      : "text-xl"
+                  }
+                >
+                  About
+                </NavLink>
+              </li>
+              <li className=" text-dark-01 hover:border-b-2 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
+                <NavLink
+                  to="/skill"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending text-xl"
+                      : isActive
+                      ? "dark:text-sky-500 text-indigo-600 text-xl"
+                      : "text-xl"
+                  }
+                >
+                  Skill
+                </NavLink>
+              </li>
+              <li className=" text-dark-01 hover:border-b-2 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
+                <NavLink
+                  to="/project"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending text-xl"
+                      : isActive
+                      ? "dark:text-sky-500 text-indigo-600 text-xl"
+                      : "text-xl"
+                  }
+                >
+                  Project
+                </NavLink>
+              </li>
+              <li className=" text-dark-01 hover:border-b-2 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
+                <NavLink
+                  to="/contract"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending text-xl"
+                      : isActive
+                      ? "dark:text-sky-500 text-indigo-600 text-xl"
+                      : "text-xl"
+                  }
+                >
+                  Contract
+                </NavLink>
+              </li>
             </ul>
           </div>
           <a className="p-2 flex  items-center font-bold text-2xl">
             <p className="hidden md:block text-[#44C5DB]">
               <img
-                className="h-10 w-14"
-                src="https://i.ibb.co/6yM0PsD/protfili-logo.png"
+                className="h-12 w-10"
+                src="https://i.ibb.co/8YwLmY0/6996098-removebg-preview.png"
                 alt=""
               />
             </p>
-            <p className="text-[#44C5DB]">Rabby</p>
+            <p className="text-sky-500">Tanvir</p>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
