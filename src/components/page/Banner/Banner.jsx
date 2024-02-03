@@ -4,7 +4,8 @@ import { FaFileDownload } from "react-icons/fa";
 export default function Banner() {
   return (
     <>
-      <div className="md:py-16npm i react-simple-typewriter">
+      <div className=" ">
+        <div class="absolute right-[18%] top-0 mr-28 h-[150px] w-[200px] rotate-12 rounded-3xl bg-gradient-to-l from-blue-600 to-sky-400 opacity-20 blur-3xl filter dark:block dark:opacity-30 lg:top-44 lg:-right-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[500px]"></div>
         {/* grid */}
         <div className="md:flex items-center py-4">
           <div className="flex-1">
@@ -17,7 +18,7 @@ export default function Banner() {
           <div className="flex-1 text-center md:text-left space-y-2">
             <h4 className="text-dark-01 dark:text-white">Hello, this is</h4>
             <h2 className="dark:text-sky-500 text-indigo-600 text-3xl font-medium">
-              Tanvir Ahmaed Sohan
+              Tanvir Ahmed Sohan
             </h2>
             <h2 className="dark:text-white text-3xl font-medium">
               <span className="text-dark-03">I'm </span>
