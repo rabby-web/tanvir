@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Service from "../Service/Service";
 import Skill from "../Skill/Skill";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 
       <About></About>
       <Skill></Skill>
+      <Service></Service>
     </>
   );
 }

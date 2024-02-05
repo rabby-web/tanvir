@@ -70,6 +70,20 @@ const NavBar = () => {
       </li>
       <li className=" text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
         <NavLink
+          to="/service"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending "
+              : isActive
+              ? "dark:text-sky-500 text-indigo-600"
+              : ""
+          }
+        >
+          Service
+        </NavLink>
+      </li>
+      <li className=" text-dark-01 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
+        <NavLink
           to="/project"
           className={({ isActive, isPending }) =>
             isPending
@@ -162,6 +176,20 @@ const NavBar = () => {
                   }
                 >
                   Skill
+                </NavLink>
+              </li>
+              <li className=" text-dark-01 hover:border-b-2 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
+                <NavLink
+                  to="/service"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending text-xl"
+                      : isActive
+                      ? "dark:text-sky-500 text-indigo-600 text-xl"
+                      : "text-xl"
+                  }
+                >
+                  Service
                 </NavLink>
               </li>
               <li className=" text-dark-01 hover:border-b-2 text-xl font-medium hover:text-sky-500 hover:underline dark:text-white">
