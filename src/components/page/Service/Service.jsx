@@ -1,6 +1,7 @@
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import PPC from "./PPC";
 import SEO from "./SEO";
+import SMM from "./SMM";
 
 export default function Service() {
   return (
@@ -11,6 +12,7 @@ export default function Service() {
           {/* <ServiceCart></ServiceCart> */}
           <SEO></SEO>
           <PPC></PPC>
+          <SMM></SMM>
         </div>
       </div>
     </>
