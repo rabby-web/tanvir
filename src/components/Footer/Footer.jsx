@@ -1,67 +1,123 @@
+import { Link } from "react-router-dom";
+import { BsFillEnvelopeAtFill, BsFillTelephoneFill } from "react-icons/bs";
+import { FaLocationDot } from "react-icons/fa6";
+import {
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+
 const Footer = () => {
   return (
-    <div className="bg-[#222935]  md:p-6 p-6">
-      <footer className="footer md:p-6 text-white max-w-7xl mx-auto">
-        <aside>
-          <img
-            src="https://i.ibb.co/8YwLmY0/6996098-removebg-preview.png"
-            alt=""
-            className="w-20"
-          />
-          <p>
-            <span className="text-xl">Tanvir Ahmaed Sohan</span>
-            <br />
-            <address>Degital Merketer</address>
-          </p>
-        </aside>
-        <nav className="">
-          <header className="footer-title text-white">Section</header>
-          <a className="/home">Home</a>
-          <a className="link link-hover">About</a>
-          <a className="link link-hover">Blog</a>
-        </nav>
-        <nav>
-          <header className="footer-title text-white">Social</header>
-          <div className="grid grid-flow-col gap-4">
-            <a href="https://twitter.com/RabbyNaeem29188">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
+    <div className="bg-[url(https://i.ibb.co/YX2wtZJ/bg-footer1.jpg)] bg-cover pt-20 pb-5 -mb-6">
+      <div className="max-w-7xl mx-auto px-5">
+        <div className="px-5 lg:px-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b pb-6 border-gray-500">
+          <div className="col-span-2 md:col-span-3 lg:col-span-2">
+            <img
+              className="w-52 md:w-[250px]"
+              src="https://i.ibb.co/rfZfGrk/logo-no-background.png"
+              alt=""
+            />
+            <p className=" text-[#FFFFFFB2] mt-4">
+              {"I'm"} a passionate Front End Developer with a love for creating
+              seamless user experiences.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-8">
+              Useful Links
+            </h3>
+            <ul>
+              <li className=" mb-3 lg:mb-0">
+                <Link
+                  className="text-sm hover:underline text-[#ffffffb2]"
+                  to="#about"
+                >
+                  About
+                </Link>
+              </li>
+              <li className=" mb-3 lg:mb-0">
+                <Link
+                  className="text-sm hover:underline text-[#ffffffb2]"
+                  to="/donation"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className=" mb-3 lg:mb-0">
+                <Link
+                  className="text-sm hover:underline text-[#ffffffb2]"
+                  to="/statistics"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li className=" mb-3 lg:mb-0">
+                <Link
+                  className="text-sm hover:underline text-[#ffffffb2]"
+                  to="/statistics"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-8">Support</h3>
+            <p className="text-[#FFFFFFB2] mb-2 text-sm">Resources</p>
+            <p className="text-[#FFFFFFB2] mb-2 text-sm">Faqs </p>
+            <p className="text-[#FFFFFFB2] mb-2 text-sm">Privacy Policy</p>
+            <p className="text-[#FFFFFFB2] mb-2 text-sm">Careers</p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-8">
+              Our Contact
+            </h3>
+            <a
+              href="mailto:dev.aminur@gmail.com"
+              className="text-[#FFFFFFB2] mb-3 text-sm flex items-center gap-2"
+            >
+              <BsFillEnvelopeAtFill className="text-lg text-dark-03" />
+              dev@aminur.com
             </a>
-            <a href="https://www.youtube.com/watch?v=Q52Zcq09Hrg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
+            <a
+              href="tel:+8801755143182"
+              className="text-[#FFFFFFB2] mb-3 text-sm flex items-center gap-2"
+            >
+              <BsFillTelephoneFill className="text-lg text-dark-03" />
+              +111-2222-3333
             </a>
-            <a href="https://www.facebook.com/ridoy.babu.3538/">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
+            <a
+              href=""
+              className="text-[#FFFFFFB2] mb-6 text-sm flex items-center gap-2"
+            >
+              <FaLocationDot className="text-xl text-dark-03" />
+              Rangpur City in Bangladesh
             </a>
           </div>
-        </nav>
-      </footer>
-      <p className="text-center text-sm text-white pb-3">
-        Copyright © 2023 - All right reserved by ACME Industries Ltd
-      </p>
+        </div>
+        <div className="py-6 flex justify-between px-5 lg:px-0">
+          <p className="text-[#FFFFFFB2] text-center">
+            Copyright © 2023 Aminur Rahman. All Rights Reserved.
+          </p>
+          <div className="text-[#FFFFFFB2] text-2xl hidden md:flex gap-4">
+            <Link>
+              <AiOutlineInstagram />
+            </Link>
+            <Link>
+              <AiFillFacebook />
+            </Link>
+            <Link>
+              <AiOutlineTwitter />
+            </Link>
+            <Link>
+              <AiFillLinkedin />
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import SectionTitle from "../../SectionTitle/SectionTitle";
+import CM from "./CM";
 import PPC from "./PPC";
 import SEO from "./SEO";
 import SMM from "./SMM";
@@ -13,6 +14,7 @@ export default function Service() {
           <SEO></SEO>
           <PPC></PPC>
           <SMM></SMM>
+          <CM></CM>
         </div>
       </div>
     </>
