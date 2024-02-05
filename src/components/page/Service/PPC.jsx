@@ -1,8 +1,9 @@
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
+
 export default function PPC() {
   return (
     <>
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
+      <div class="w-full bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
         <a href="#">
           <img
             class="rounded-t-lg h-52 w-full object-cover"
@@ -17,67 +18,12 @@ export default function PPC() {
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Pay-per-click (PPC) is an online advertising model in which an
-            advertiser pays a publisher every time an advertisement link is
-            “clicked” on. Alternatively, PPC is known as the cost-per-click
-            (CPC) model. The pay-per-click model is offered primarily by search
-            engines (e.g., Google) and social networks (e.g., Facebook).
+            PPC or pay-per-click is a type of internet marketing which involves
+            advertisers paying a fee each time one of their ads is clicked.
+            Simply, you only pay for advertising if your ad is actually clicked
+            on.
           </p>
-          {/* <button
-            className="btn"
-            
-          >
-            open modal
-          </button> */}
-          <dialog id="my_modal_2" className="modal ">
-            <div className="modal-box bg-slate-200 text-black w-full m-4 rounded-sm">
-              <h3 className="font-bold text-xl text-violet-600">
-                Pay-Per-Click Advertising (PPC):
-              </h3>
-              <div className="p-2 mb-1 text-lg">
-                <h3>
-                  Pay-per-click (PPC) is an online advertising model in which an
-                  advertiser pays a publisher every time an advertisement link
-                  is “clicked” on. Alternatively, PPC is known as the
-                  cost-per-click (CPC) model. The pay-per-click model is offered
-                  primarily by search engines (e.g., Google) and social networks
-                  (e.g., Facebook).
-                </h3>
-              </div>
-              <p className="py-4">
-                <span className="p-1 flex gap-3">
-                  <HiOutlineChevronDoubleRight className="text-4xl font-bold text-blue-600" />
-                  <span className="text-xl text-red-700">
-                    Ad Campaign Management:
-                  </span>{" "}
-                  Create and manage PPC campaigns across platforms like Google
-                  Ads, Bing Ads, and social media.
-                </span>
-                <span className="p-1 flex gap-3">
-                  <HiOutlineChevronDoubleRight className="text-4xl font-bold text-blue-600" />
-                  Keyword Selection: Choose high-converting keywords and
-                  negative keywords to optimize ad performance
-                </span>
-                <span className="p-1 flex gap-3">
-                  <HiOutlineChevronDoubleRight className="text-4xl font-bold text-blue-600" />
-                  Ad Copywriting: Craft compelling ad copy and creatives to
-                  drive clicks and conversions.
-                </span>
-                <span className="p-1 flex gap-3">
-                  <HiOutlineChevronDoubleRight className="text-4xl font-bold text-blue-600" />
-                  Performance Tracking: Monitor campaign metrics like
-                  click-through rate (CTR), conversion rate, and return on ad
-                  spend (ROAS) to optimize performance.
-                </span>
-              </p>
-              <div className="modal-action">
-                <form method="dialog">
-                  {/* if there is a button in form, it will close the modal */}
-                  <button className="btn">Close</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
+
           <button
             onClick={() => document.getElementById("my_modal_2").showModal()}
           >
@@ -124,6 +70,70 @@ export default function PPC() {
             </a>
           </button>
         </div>
+        <dialog id="my_modal_2" className="modal ">
+          <div className="modal-box bg-slate-200 dark:bg-dark-01 dark:text-white text-black m-0 p-2 rounded-lg">
+            <h3 className="font-bold text-2xl text-violet-800 dark:text-purple-600">
+              Pay-Per-Click Advertising (PPC):
+            </h3>
+            <div className="p-2 mb-1 mt-2 text-lg font-medium">
+              <h3>
+                PPC or pay-per-click is a type of internet marketing which
+                involves advertisers paying a fee each time one of their ads is
+                clicked. Simply, you only pay for advertising if your ad is
+                actually clicked on.
+              </h3>
+            </div>
+            <p className="py-4 text-lg">
+              <span className="p-1 flex gap-3">
+                <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
+                <div>
+                  <span className="text-lg font-semibold">
+                    Ad Campaign Management:
+                  </span>{" "}
+                  Create and manage PPC campaigns across platforms like Google
+                  Ads, Bing Ads, and social media.
+                </div>
+              </span>
+              <span className="p-1 flex gap-3">
+                <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
+                <div>
+                  <span className="text-lg font-semibold">
+                    Keyword Selection:
+                  </span>{" "}
+                  Choose high-converting keywords and negative keywords to
+                  optimize ad performance.
+                </div>
+              </span>
+              <span className="p-1 flex gap-3">
+                <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
+                <div>
+                  <span className="text-lg font-semibold">Ad Copywriting:</span>{" "}
+                  Craft compelling ad copy and creatives to drive clicks and
+                  conversions.
+                </div>
+              </span>
+              <span className="p-1 flex gap-3">
+                <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
+                <div>
+                  <span className="text-lg font-semibold">
+                    Performance Tracking:
+                  </span>{" "}
+                  Monitor campaign metrics like click-through rate (CTR),
+                  conversion rate, and return on ad spend (ROAS) to optimize
+                  performance.
+                </div>
+              </span>
+            </p>
+            <div className="modal-action">
+              <form method="dialog">
+                {/* if there is a button in form, it will close the modal */}
+                <button className="btn bg-violet-700 dark:bg-purple-600 text-white -mt-2">
+                  Close
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 export default function SEO() {
   return (
     <>
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
+      <div class="w-full bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
         <a href="#">
           <img
             class="rounded-t-lg h-52 w-full object-cover"
