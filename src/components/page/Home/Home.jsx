@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Test from "../Banner/Test";
 import Service from "../Service/Service";
 import Skill from "../Skill/Skill";
 
@@ -15,6 +16,7 @@ export default function Home() {
         <div class="absolute hidden h-14 w-[600px] rotate-[-40deg] rounded-3xl bg-purple-400 opacity-30 blur-2xl filter dark:hidden lg:top-20 lg:-right-28 lg:block lg:h-10 lg:w-[600px] lg:opacity-20 lg:blur-xl xl:-right-40 xl:h-2 xl:w-[800px] xl:opacity-100"></div> */}
       </div>
       <Banner></Banner>
+      {/* <Test></Test> */}
 
       <About></About>
       <Skill></Skill>

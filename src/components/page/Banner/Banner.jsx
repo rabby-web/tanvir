@@ -1,5 +1,6 @@
 import { TbArrowRoundaboutRight } from "react-icons/tb";
 import { FaFileDownload } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Banner() {
   return (
@@ -20,13 +21,27 @@ export default function Banner() {
             <h2 className="dark:text-sky-500 text-indigo-600 text-3xl font-medium">
               Tanvir Ahmed Sohan
             </h2>
-            <h2 className="dark:text-white text-3xl font-medium">
+            <h2 className="dark:text-white text-3xl font-medium py-2">
               <span className="text-dark-03">I'm </span>
               {/* <span className="dark:text-purple-600 text-fuchsia-500">
                 Digital Marketing Specialist
               </span> */}
-              <span class="text-3xl  text-center font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
-                Digital Marketing Specialist
+              <span class="text-xl  text-center font-bold text-dark-03">
+                <TypeAnimation
+                  sequence={[
+                    "Aminur Rahman",
+                    1000,
+                    "Font-End Developer",
+                    1000,
+                    "React Developer",
+                    1000,
+                    "Jr MERN Developer",
+                    1000,
+                  ]}
+                  speed={50}
+                  style={{ fontSize: "40px" }}
+                  repeat={Infinity}
+                />
               </span>
             </h2>
             <div className="flex gap-5 justify-center items-center md:justify-start md:items-start mt-2">
