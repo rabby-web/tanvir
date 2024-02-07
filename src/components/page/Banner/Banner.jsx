@@ -29,13 +29,13 @@ export default function Banner() {
               <span class="text-xl  text-center font-bold text-dark-03">
                 <TypeAnimation
                   sequence={[
-                    "Aminur Rahman",
+                    "Expert",
                     1000,
-                    "Font-End Developer",
+                    "Digital Marketer",
                     1000,
-                    "React Developer",
+                    "SEO Expert",
                     1000,
-                    "Jr MERN Developer",
+                    "Full Stack Digital Marketer",
                     1000,
                   ]}
                   speed={50}

@@ -1,30 +1,31 @@
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 
-export default function AR() {
+export default function CRO() {
   return (
     <>
       <div class="w-full bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
         <a href="#">
           <img
             class="rounded-t-lg h-52 w-full object-cover"
-            src="https://img.freepik.com/premium-vector/isometric-flat-3d-illustration-concept-man-analyzing-data_18660-4862.jpg?size=626&ext=jpg&ga=GA1.1.1163622796.1693601594&semt=ais"
+            src="https://img.freepik.com/free-vector/business-people-working-illustrated-design_23-2148469680.jpg?t=st=1707274757~exp=1707275357~hmac=14ebd776d26d22192e680080e20723704f164f83fd74d5f64509d3edadb9ee5b"
             alt=""
           />
         </a>
         <div class="p-5">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Analytics and Reporting:
+              Conversion Rate Optimization (CRO):
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Reporting involves gathering data and presenting it in a structured
-            way, whereas analytics is using data to identify patterns and gain
-            insights to inform future decision-making.
+            Conversion rate optimization (CRO) is the process of increasing the
+            percentage of conversions from a website or mobile app. CRO
+            typically involves generating ideas for elements on your site or
+            app.
           </p>
 
           <button
-            onClick={() => document.getElementById("my_modal_7").showModal()}
+            onClick={() => document.getElementById("my_modal_10").showModal()}
           >
             <a
               href="#_"
@@ -69,57 +70,55 @@ export default function AR() {
             </a>
           </button>
         </div>
-        <dialog id="my_modal_7" className="modal ">
+        <dialog id="my_modal_10" className="modal ">
           <div className="modal-box bg-slate-200 dark:bg-dark-01 dark:text-white text-black m-0 p-2 rounded-lg">
             <h3 className="font-bold text-2xl text-violet-800 dark:text-purple-600">
-              Analytics and Reporting:
+              Conversion Rate Optimization (CRO):
             </h3>
             <div className="p-2 mb-1 mt-2 text-lg font-medium">
               <h3>
-                Reporting involves gathering data and presenting it in a
-                structured way, whereas analytics is using data to identify
-                patterns and gain insights to inform future decision-making.
+                Conversion rate optimization (CRO) is the process of increasing
+                the percentage of conversions from a website or mobile app. CRO
+                typically involves generating ideas for elements on your site or
+                app.
               </h3>
             </div>
             <p className="py-4 text-lg">
               <span className="p-1 flex gap-3">
                 <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
                 <div>
-                  <span className="text-lg font-semibold">
-                    Data Tracking Setup:
-                  </span>{" "}
-                  Implement tracking tools like Google Analytics and Tag Manager
-                  to monitor website traffic, conversions, and user behavior.
+                  <span className="text-lg font-semibold">Website Audit:</span>{" "}
+                  Conduct a comprehensive review of your website to identify
+                  conversion barriers and optimization opportunities.
+                </div>
+              </span>
+              <span className="p-1 flex gap-3">
+                <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
+                <div>
+                  <span className="text-lg font-semibold">A/B Testing:</span>{" "}
+                  Test different variations of web pages, forms, and
+                  calls-to-action to determine the most effective elements.
                 </div>
               </span>
               <span className="p-1 flex gap-3">
                 <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
                 <div>
                   <span className="text-lg font-semibold">
-                    Performance Analysis:
+                    User Experience (UX) Optimization:{" "}
                   </span>{" "}
-                  Analyze key metrics and KPIs to evaluate the effectiveness of
-                  digital marketing campaigns.
+                  Improve website navigation, page speed, and mobile
+                  responsiveness to enhance user experience and increase
+                  conversions.
                 </div>
               </span>
               <span className="p-1 flex gap-3">
                 <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
                 <div>
                   <span className="text-lg font-semibold">
-                    Custom Reporting:
+                    Conversion Funnel Analysis:
                   </span>{" "}
-                  Generate customized reports outlining campaign performance,
-                  trends, and recommendations for optimization.
-                </div>
-              </span>
-              <span className="p-1 flex gap-3">
-                <HiOutlineChevronDoubleRight className="text-4xl font-bold text-violet-800 dark:text-purple-600" />
-                <div>
-                  <span className="text-lg font-semibold">
-                    Ongoing Optimization:{" "}
-                  </span>{" "}
-                  Set Use data insights to continuously refine strategies and
-                  improve ROI.
+                  Analyze user behavior throughout the conversion process to
+                  identify drop-off points and implement solutions.
                 </div>
               </span>
             </p>

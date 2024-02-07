@@ -20,7 +20,7 @@ const Footer = () => {
               alt=""
             />
             <p className=" text-[#FFFFFFB2] mt-4">
-              {"I'm"} a passionate Front End Developer with a love for creating
+              {"I'm"} a passionate Digital Marketer with a love for creating
               seamless user experiences.
             </p>
           </div>
