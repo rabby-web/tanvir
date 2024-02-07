@@ -1,6 +1,8 @@
 import About from "../About/About";
 import Banner from "../Banner/Banner";
 import Test from "../Banner/Test";
+import Contract from "../Contract/Contract";
+import Project from "../Project/Project";
 import Service from "../Service/Service";
 import Skill from "../Skill/Skill";
 
@@ -21,6 +23,8 @@ export default function Home() {
       <About></About>
       <Skill></Skill>
       <Service></Service>
+      <Project></Project>
+      <Contract></Contract>
     </>
   );
 }

@@ -7,6 +7,7 @@ import EM from "./EM";
 import PPC from "./PPC";
 import SEO from "./SEO";
 import SMM from "./SMM";
+import WEB from "./WEB";
 
 export default function Service() {
   return (
@@ -26,6 +27,7 @@ export default function Service() {
           <AR></AR>
           <CRO></CRO>
           <BD></BD>
+          <WEB></WEB>
         </div>
       </div>
     </>
