@@ -28,7 +28,7 @@ const Footer = () => {
                 src="https://i.ibb.co/8YwLmY0/6996098-removebg-preview.png"
                 alt=""
               />
-              <h2 className="text-2xl font-semibold text-tc-1 hover:text-tc-2">
+              <h2 className="text-2xl font-semibold text-tc-2 dark:text-tc-1 hover:text-tc-2">
                 Tanvir{" "}
               </h2>
             </div>
@@ -100,21 +100,21 @@ const Footer = () => {
               href="mailto:tanvirahmed9112@gmail.com"
               className="text-[#FFFFFFB2] mb-3 text-sm flex items-center gap-2 hover:underline"
             >
-              <BsFillEnvelopeAtFill className="text-lg text-tc-1 hover:text-tc-2" />
+              <BsFillEnvelopeAtFill className="text-lg text-tc-2 dark:text-tc-1 hover:text-tc-2" />
               tanvirahmed9112@gmail.com
             </a>
             <a
               href="tel:+8801823200465"
               className="text-[#FFFFFFB2] mb-3 text-sm flex items-center gap-2 hover:underline"
             >
-              <BsFillTelephoneFill className="text-lg text-tc-1 hover:text-tc-2" />
+              <BsFillTelephoneFill className="text-lg text-tc-2 dark:text-tc-1 hover:text-tc-2" />
               +8801823200465
             </a>
             <a
               href=""
               className="text-[#FFFFFFB2] mb-6 text-sm flex items-center gap-2"
             >
-              <FaLocationDot className="text-xl text-tc-1 hover:text-tc-2" />
+              <FaLocationDot className="text-xl text-tc-2 dark:text-tc-1 hover:text-tc-2" />
               Rangpur City in Bangladesh
             </a>
           </div>
@@ -126,31 +126,31 @@ const Footer = () => {
           <div className="text-[#FFFFFFB2] text-2xl hidden md:flex gap-4">
             <Link
               to="https://www.instagram.com/tanvir.ahmed_sohan?igsh=bWUyY2x3azBsNXBz"
-              className="text-tc-1 hover:text-tc-2"
+              className="text-tc-2 dark:text-tc-1 hover:text-tc-2"
             >
               <AiOutlineInstagram />
             </Link>
             <Link
               to="https://web.facebook.com/profile.php?id=61553791477478&mibextid=kFxxJD&_rdc=1&_rdr"
-              className="text-tc-1 hover:text-tc-2"
+              className="text-tc-2 dark:text-tc-1 hover:text-tc-2"
             >
               <AiFillFacebook />
             </Link>
             <Link
               to="https://twitter.com/Tanvir_Ahmed65"
-              className="text-tc-1 hover:text-tc-2"
+              className="text-tc-2 dark:text-tc-1 hover:text-tc-2"
             >
               <AiOutlineTwitter />
             </Link>
             <Link
               to="https://www.linkedin.com/in/tanvir-ahmed-493aaa233/"
-              className="text-tc-1 hover:text-tc-2"
+              className="text-tc-2 dark:text-tc-1 hover:text-tc-2"
             >
               <AiFillLinkedin />
             </Link>
             <Link
               to="https://join.skype.com/invite/uZuOjNz72XNfv"
-              className="text-tc-1 hover:text-tc-2"
+              className="text-tc-2 dark:text-tc-1 hover:text-tc-2"
             >
               <FaSkype />
             </Link>

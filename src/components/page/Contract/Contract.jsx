@@ -1,13 +1,17 @@
 import { FaPaperPlane } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import SectionTitle from "../../SectionTitle/SectionTitle";
+import { FaSkype } from "react-icons/fa";
 
 export default function Contract() {
   return (
     <>
-      <SectionTitle heading="Contact" subHeading="Lets Go"></SectionTitle>
+      <SectionTitle
+        heading="Contact"
+        subHeading="contact with me"
+      ></SectionTitle>
       <div>
         <div className="px-5">
           <div className="max-w-7xl mx-auto p-10 my-20 flex flex-col-reverse md:flex-row gap-6 items-center shadow-md rounded-lg border border-gray-200">
@@ -19,13 +23,13 @@ export default function Contract() {
               <h2 className="text-dark-01 dark:text-white font-semibold text-3xl md:text-4xl mb-2">
                 Subscribe now
               </h2>
-              <div className="w-20 h-1.5 bg-dark-03 mb-5 ml-2"></div>
+              <div className="w-20 h-1.5 bg-tc-2 dark:bg-tc-1 mb-5 ml-2"></div>
               <p className="text-dark-02 dark:text-white text-lg mb-5">
                 Get latest updates, deals, and exclusive offers Every time.
               </p>
               <form>
                 <input
-                  className="py-3 px-5 bg-gray-100 border border-gray-200 w-full rounded outline-none mb-4"
+                  className="py-2 px-2 bg-gray-100 border border-gray-200 w-full rounded outline-none mb-4"
                   type="text"
                   name="name"
                   placeholder="Your Name"
@@ -39,7 +43,7 @@ export default function Contract() {
                   id=""
                 />
                 <button
-                  className="py-3 px-10 text-white bg-dark-03 rounded inline-flex gap-3 items-center"
+                  className="py-3 px-10 text-white bg-tc-2 dark:bg-tc-1 rounded inline-flex gap-3 items-center"
                   type="submit"
                 >
                   Subscribe <FaPaperPlane></FaPaperPlane>
@@ -55,43 +59,46 @@ export default function Contract() {
               className="md:w-1/2 p-10"
             >
               <h2 className="text-dark-01 dark:text-white font-semibold text-3xl md:text-4xl mb-2">
-                Contract now
+                Contacts now
               </h2>
-              <div className="w-20 h-1.5 bg-dark-03 dark:text-white mb-5 ml-2"></div>
+              <div className="w-20 h-1.5 bg-tc-2 dark:bg-tc-1 dark:text-white mb-5 ml-2"></div>
               <div className="flex gap-3 font-medium text-xl items-center ">
-                <FaWhatsapp className="text-dark-03 dark:text-white text-3xl" />
-                <a className="text-dark-01 dark:text-white" href="#">
-                  01590040222
+                <FaWhatsapp className="text-tc-2 dark:text-white text-3xl" />
+                <a
+                  className="text-dark-01 dark:text-white"
+                  href="tel:+8801823200465"
+                >
+                  +8801823200465
                 </a>
               </div>
               <div className="flex gap-3 font-medium text-xl items-center ">
-                <MdEmail className="text-dark-03 dark:text-white text-3xl" />
+                <MdEmail className="text-tc-2 dark:text-white text-3xl" />
                 <a
                   className="text-dark-01 dark:text-white"
-                  href="mailto:rabby-webdeveloper@gmail.com"
+                  href="mailto:tanvirahmed9112@gmail.com"
                 >
-                  rabby-webdeveloper@gmail.com
+                  tanvirahmed9112@gmail.com
                 </a>
               </div>
               <div className="flex-1">
                 <h2 className="text-dark-01 dark:text-white font-semibold text-3xl md:text-4xl mb-2 mt-2">
                   Social Link
                 </h2>
-                <div className="text-dark-03 dark:text-white flex  gap-4 mt-4">
-                  <a href="https://github.com/rabby-web">
+                <div className="text-tc-2 dark:text-white flex  gap-4 mt-4">
+                  <a href="https://join.skype.com/invite/uZuOjNz72XNfv">
                     <div className="flex items-center justify-center gap-2 border rounded px-2 py-1">
-                      <FaGithub />
-                      <h2>GitHub</h2>
+                      <FaSkype />
+                      <h2>Skype</h2>
                     </div>
                   </a>
-                  <a href="https://www.linkedin.com/in/rabby-web/">
+                  <a href="https://join.skype.com/invite/uZuOjNz72XNfv">
                     <div className="flex items-center justify-center gap-2 border rounded px-2 py-1">
                       <FaLinkedin />
 
                       <h2>Linkedin</h2>
                     </div>
                   </a>
-                  <a href="https://www.facebook.com/ridoy.babu.3538">
+                  <a href="https://web.facebook.com/profile.php?id=61553791477478&mibextid=kFxxJD&_rdc=1&_rdr">
                     <div className="flex items-center justify-center gap-2 border rounded px-2 py-1">
                       <FaFacebook />
                       <h2>Facebook</h2>
@@ -100,7 +107,7 @@ export default function Contract() {
                 </div>
               </div>
               {/* <div className="flex gap-3 font-medium text-xl items-center ">
-              <FaLinkedin className="text-dark-03 dark:text-white text-3xl" />
+              <FaLinkedin className="text-tc-1 dark:text-white text-3xl" />
               <a
                 className="text-dark-01 dark:text-white"
                 href="mailto:rabby-webdeveloper@gmail.com"
