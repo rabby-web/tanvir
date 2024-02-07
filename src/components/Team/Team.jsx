@@ -4,11 +4,8 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 const Team = () => {
   return (
-    <div
-      className="bg-white dark:bg-[#0F172A] my-10 mx-2 rounded-md border"
-      data-aos="flip-up"
-    >
-      <h2 className="text-4xl  pt-10 dark:text-purple-600 text-fuchsia-500 font-bold text-center sm:text-5xl ">
+    <div className="bg-white dark:bg-[#0F172A] my-10 mx-2 rounded-md border">
+      <h2 className="text-4xl  pt-10 dark:text-tc-1 text-tc-2 font-bold text-center sm:text-5xl ">
         Our Team Member
       </h2>
       <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10 ">

@@ -6,7 +6,7 @@ export default function FAQ() {
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        <h2 className="text-4xl  pt-10 dark:text-purple-600 text-fuchsia-500 font-bold text-center sm:text-5xl mb-3">
+        <h2 className="text-4xl  pt-10 dark:text-tc-1 text-tc-2 font-bold text-center sm:text-5xl mb-3">
           FAQ
         </h2>
         <div className="md:m-6 mx-3 my-6">

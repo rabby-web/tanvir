@@ -84,7 +84,7 @@ export default function Contract() {
                 <h2 className="text-dark-01 dark:text-white font-semibold text-3xl md:text-4xl mb-2 mt-2">
                   Social Link
                 </h2>
-                <div className="text-tc-2 dark:text-white flex  gap-4 mt-4">
+                <div className="text-tc-2 dark:text-white flex flex-col md:flex-row  gap-4 mt-4">
                   <a href="https://join.skype.com/invite/uZuOjNz72XNfv">
                     <div className="flex items-center justify-center gap-2 border rounded px-2 py-1">
                       <FaSkype />

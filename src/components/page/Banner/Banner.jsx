@@ -35,7 +35,7 @@ export default function Banner() {
                     1000,
                     "SEO Expert",
                     1000,
-                    "Full Stack Digital Marketer",
+                    "Full Stack ",
                     1000,
                   ]}
                   speed={50}

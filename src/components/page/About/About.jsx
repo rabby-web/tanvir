@@ -1,30 +1,118 @@
+import {
+  FaGithub,
+  FaAngleRight,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa6";
 import SectionTitle from "../../SectionTitle/SectionTitle";
+import { TypeAnimation } from "react-type-animation";
 
-export default function About() {
+const About = () => {
   return (
     <>
-      <div className="md:py-16">
-        <SectionTitle heading="About Me" subHeading="Whats new"></SectionTitle>
-        <div className=" py-8 my-4 px-4">
-          {/* <h2 className="text-purple-700 text-3xl font-semibold text-center p-3 rounded bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))]">
-          Overview:-
-        </h2> */}
-          <h2 className="text-3xl  text-center font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent my-3">
-            Welcome to Tanvir Ahmed's Digital Marketing Universe!
-          </h2>
-          <p className="sm:text-base md:text-lg font-medium max-w-5xl mx-auto  md:text-left p-6 border rounded-lg text-dark-01 dark:text-white bg-slate-200 dark:bg-black ">
-            We Are a Team Of Dedicated And Experienced Professionals Who Are
-            Passionate About Helping Businesses Grow And Succeed Through
-            Effective Digital Marketing Strategies. Our Agency Was Founded With
-            The Goal Of Helping Businesses Of All Sizes Reach Their Full
-            Potential Online. We Know That In today’s Fast-paced Digital World,
-            a Strong Online Presence Is Crucial For Success. Our Agency Was
-            Founded With The Goal Of Helping Businesses Of All Sizes Reach Their
-            Full Potential Online. We Know That In today’s Fast-paced Digital
-            World, a Strong Online Presence Is Crucial For Success.
-          </p>
+      <SectionTitle heading="About" subHeading="Lets Go"></SectionTitle>
+      <div id="about" className=" pt-10 pb-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="w-20 h-1.5 bg-yellow-20 my-5 mx-auto"></div>
+          <div className=" flex gap-12 py-16 items-center px-5 flex-col md:flex-row">
+            <div
+              className="md:border border-yellow-20 p-3 relative w-full md:w-2/5 lg:w-1/2 ml-5 md:mr-5"
+              data-aos="flip-up"
+            >
+              <img
+                className="hidden md:block"
+                src="https://i.ibb.co/VHwFY38/tr.jpg"
+                alt="2151005751"
+              />
+              {/* <div className="-mt-16 mx-auto md:absolute top-10 -right-6 w-48 md:w-28 lg:w-40 border-8 border-yellow-20 rounded-full overflow-hidden z-10">
+                <img
+                  className="scale-[1.6]"
+                  src="https://img.freepik.com/free-vector/flat-electronics-logo-templates_23-2148967495.jpg?w=740&t=st=1707327267~exp=1707327867~hmac=6f64869bd2d3e38e7c6bfed0adaf37c8501a28d9fcc2c3e26e2063131f372e02"
+                  alt=""
+                />
+              </div> */}
+            </div>
+            <div
+              className=" text-center md:text-left w-full md:w-3/5 lg:w-1/2 md:mt-6"
+              data-aos="flip-down"
+            >
+              <h3 className="text-yellow-20 tracking-[5px] mb-3 text-slate-800 dark:text-white">
+                WELCOME TO MY WEBSITE
+              </h3>
+
+              <h2 className="text-3xl dark:text-tc-1 text-tc-2 md:text-4xl lg:text-5xl font-semibold mb-2">
+                <TypeAnimation
+                  sequence={[
+                    "A LITTLE BIT ABOUT ME",
+                    1000,
+                    "Tanvir Ahmed Sohan",
+                    1000,
+                  ]}
+                  speed={50}
+                  style={{ fontSize: "40px" }}
+                  repeat={Infinity}
+                />
+              </h2>
+              <div className="w-20 mx-auto md:mx-0 h-1.5 bg-yellow-20 my-5"></div>
+              <div className="text-slate-800 dark:text-white mb-8">
+                <p>Welcome to Tanvir Ahmed's Digital Marketing Universe!</p>
+
+                <p>
+                  Hello there! I'm Tanvir Ahmed, A passionate digital marketer
+                  with a knack for turning pixels into performance. I thrive in
+                  the dynamic world of online marketing, where creativity meets
+                  analytics to drive tangible results.
+                </p>
+              </div>
+              <div className="flex gap-3 items-center justify-center lg:justify-normal text-[#bfbecb] flex-col md:flex-row">
+                <p className="text-yellow-20 mb-5 md:mb-0 text-slate-800 dark:text-white">
+                  Connect with
+                </p>
+                <div className="hidden md:block h-[1px] w-20 bg-[#bfbecb] mt-1"></div>
+                <FaAngleRight className="hidden md:block -ml-6 mt-1" />
+
+                <div className=" flex gap-3 items-center ">
+                  <li className="list-none">
+                    <a
+                      className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2  rounded hover:shadow hover:shadow-yellow-20 duration-300"
+                      href="#"
+                    >
+                      <FaGithub />
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a
+                      className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2 rounded hover:shadow hover:shadow-yellow-20 duration-300"
+                      href="#"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a
+                      className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2 rounded hover:shadow hover:shadow-yellow-20 duration-300"
+                      href="#"
+                    >
+                      <FaTwitter />
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a
+                      className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2 rounded hover:shadow hover:shadow-yellow-20 duration-300"
+                      href="#"
+                    >
+                      <FaFacebook />
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default About;
