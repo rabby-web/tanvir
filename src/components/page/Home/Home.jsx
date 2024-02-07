@@ -1,3 +1,4 @@
+import Client from "../../Client/Client";
 import FAQ from "../../FAQ/FAQ";
 import Team from "../../Team/Team";
 import About from "../About/About";
@@ -21,6 +22,7 @@ export default function Home() {
       <Project></Project>
       <Team></Team>
       <FAQ></FAQ>
+      <Client></Client>
       <Contract></Contract>
     </>
   );
