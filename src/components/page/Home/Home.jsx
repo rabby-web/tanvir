@@ -1,3 +1,4 @@
+import FAQ from "../../FAQ/FAQ";
 import Team from "../../Team/Team";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
@@ -19,6 +20,7 @@ export default function Home() {
       <Service></Service>
       <Project></Project>
       <Team></Team>
+      <FAQ></FAQ>
       <Contract></Contract>
     </>
   );
