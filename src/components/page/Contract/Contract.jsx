@@ -4,8 +4,49 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import { FaSkype } from "react-icons/fa";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export default function Contract() {
+  const [sending, setSending] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // const toastId = toast.loading("Sending ...");
+    // setSending(true);
+    const from_name = e.target.name.value;
+    const from_mail = e.target.email.value;
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
+    const mail = { from_name, from_mail, subject, message };
+    console.log(mail);
+    emailjs
+      .send("service_kcdoef8", "template_7rgbkeh", mail, "UmROyUsv9bz4ZDlfC")
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSending(false);
+          // toast.success("Send Success", { id: toastId });
+          Swal.fire({
+            title: "Good job!",
+            text: "Successfully Send SMS",
+            icon: "success",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          setSending(false);
+          // toast.error("Send Failed", { id: toastId });
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            footer: '<a href="#">Why do I have this issue?</a>',
+          });
+        }
+      );
+    e.target.reset();
+  };
   return (
     <>
       <SectionTitle
@@ -27,9 +68,9 @@ export default function Contract() {
               <p className="text-dark-02 dark:text-white text-lg mb-5">
                 Get latest updates, deals, and exclusive offers Every time.
               </p>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <input
-                  className="py-2 px-2 bg-gray-100 border border-gray-200 w-full rounded outline-none mb-4"
+                  className="py-3 px-5 bg-gray-100 border border-gray-200 w-full rounded outline-none mb-4"
                   type="text"
                   name="name"
                   placeholder="Your Name"
@@ -42,11 +83,43 @@ export default function Contract() {
                   placeholder="Your Email"
                   id=""
                 />
+                <input
+                  className="py-3 px-5 bg-gray-100 border border-gray-200 w-full rounded outline-none mb-4"
+                  type="text"
+                  name="subject"
+                  placeholder="Your Subject"
+                  id=""
+                />
+                <textarea
+                  className="py-3 px-5 bg-gray-100 border border-gray-200 w-full rounded outline-none mb-4"
+                  name="message"
+                  placeholder="Your SMS"
+                  id=""
+                  cols="30"
+                  rows="4"
+                ></textarea>
+                {/* {!sending ? (
+                  <button
+                    type="submit"
+                    className="bg-yellow-20 rounded w-80 py-3 text-white uppercase font-medium"
+                  >
+                    Send Message
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    disabled
+                    style={{ opacity: 0.6, cursor: "not-allowed" }}
+                    className="bg-white text-black rounded w-80 py-3 uppercase font-medium"
+                  >
+                    Sending ...
+                  </button>
+                )} */}
                 <button
                   className="py-3 px-10 text-white bg-tc-2 dark:bg-tc-1 rounded inline-flex gap-3 items-center"
                   type="submit"
                 >
-                  Subscribe <FaPaperPlane></FaPaperPlane>
+                  Send SMS <FaPaperPlane></FaPaperPlane>
                 </button>
               </form>
             </div>

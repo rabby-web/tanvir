@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa6";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -37,11 +38,11 @@ const About = () => {
               className=" text-center md:text-left w-full md:w-3/5 lg:w-1/2 md:mt-6"
               data-aos="flip-down"
             >
-              <h3 className="text-yellow-20 tracking-[5px] mb-3 text-slate-800 dark:text-white">
+              <h3 className="text-yellow-20 tracking-[5px] mb-3 dark:text-tc-1 text-tc-2">
                 WELCOME TO MY WEBSITE
               </h3>
 
-              <h2 className="text-3xl dark:text-tc-1 text-tc-2 md:text-4xl lg:text-5xl font-semibold mb-2">
+              <h2 className="text-3xl   font-semibold py-2 bg-gradient-to-r from-blue-600 via-violet-600 to-indigo-400 inline-block text-transparent bg-clip-text">
                 <TypeAnimation
                   sequence={[
                     "A LITTLE BIT ABOUT ME",
@@ -56,7 +57,9 @@ const About = () => {
               </h2>
               <div className="w-20 mx-auto md:mx-0 h-1.5 bg-yellow-20 my-5"></div>
               <div className="text-slate-800 dark:text-white mb-8">
-                <p>Welcome to Tanvir Ahmed's Digital Marketing Universe!</p>
+                <p className="text-xl   font-semibold py-2 bg-gradient-to-r from-blue-600 via-violet-600 to-indigo-400 inline-block text-transparent bg-clip-text">
+                  Welcome to Tanvir Ahmed's Digital Marketing Universe!
+                </p>
 
                 <p>
                   Hello there! I'm Tanvir Ahmed, A passionate digital marketer
@@ -75,16 +78,8 @@ const About = () => {
                 <div className=" flex gap-3 items-center ">
                   <li className="list-none">
                     <a
-                      className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2  rounded hover:shadow hover:shadow-yellow-20 duration-300"
-                      href="#"
-                    >
-                      <FaGithub />
-                    </a>
-                  </li>
-                  <li className="list-none">
-                    <a
                       className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2 rounded hover:shadow hover:shadow-yellow-20 duration-300"
-                      href="#"
+                      href="https://www.linkedin.com/in/tanvir-ahmed-493aaa233/"
                     >
                       <FaLinkedin />
                     </a>
@@ -92,7 +87,7 @@ const About = () => {
                   <li className="list-none">
                     <a
                       className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2 rounded hover:shadow hover:shadow-yellow-20 duration-300"
-                      href="#"
+                      href="https://twitter.com/Tanvir_Ahmed65"
                     >
                       <FaTwitter />
                     </a>
@@ -100,7 +95,7 @@ const About = () => {
                   <li className="list-none">
                     <a
                       className=" bg-transparent inline-block p-2 border border-tc-2 dark:border-tc-1 dark:text-tc-1 text-tc-2 rounded hover:shadow hover:shadow-yellow-20 duration-300"
-                      href="#"
+                      href="https://web.facebook.com/profile.php?id=61553791477478&mibextid=kFxxJD&_rdc=1&_rdr"
                     >
                       <FaFacebook />
                     </a>

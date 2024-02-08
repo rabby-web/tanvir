@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function Banner() {
   return (
     <>
-      <div className=" ">
+      <div className="md:my-16">
         <div class="absolute right-[18%] top-0 mr-28 h-[150px] w-[200px] rotate-12 rounded-3xl bg-gradient-to-l from-blue-600 to-sky-400 opacity-20 blur-3xl filter dark:block dark:opacity-30 lg:top-44 lg:-right-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[500px]"></div>
         {/* grid */}
         <div className="md:flex items-center py-4">
@@ -18,31 +18,25 @@ export default function Banner() {
           </div>
           <div className="flex-1 text-center md:text-left space-y-2">
             <h4 className="text-dark-01 dark:text-white">Hello, this is</h4>
-            <h2 className="dark:text-sky-500 text-indigo-600 text-3xl font-medium">
+            <h2 className="dark:text-sky-500 text-indigo-600 text-4xl font-medium">
               Tanvir Ahmed Sohan
             </h2>
-            <h2 className="dark:text-white text-3xl font-medium py-2">
-              <span className="text-dark-03">I'm </span>
-              {/* <span className="dark:text-purple-600 text-fuchsia-500">
-                Digital Marketing Specialist
-              </span> */}
-              <span class="text-xl  text-center font-bold text-dark-03">
-                <TypeAnimation
-                  sequence={[
-                    "Expert",
-                    1000,
-                    "Digital Marketer",
-                    1000,
-                    "SEO Expert",
-                    1000,
-                    "Full Stack ",
-                    1000,
-                  ]}
-                  speed={50}
-                  style={{ fontSize: "40px" }}
-                  repeat={Infinity}
-                />
-              </span>
+            <h2 className=" text-3xl font-semibold py-2 bg-gradient-to-r from-blue-600 via-violet-600 to-indigo-400 inline-block text-transparent bg-clip-text">
+              <TypeAnimation
+                sequence={[
+                  "Digital Marketing Specialist",
+                  1000,
+                  "Digital Marketer",
+                  1000,
+                  "SEO Expert",
+                  1000,
+                  "Full Stack Digital Marketer",
+                  1000,
+                ]}
+                speed={50}
+                style={{ fontSize: "30px" }}
+                repeat={Infinity}
+              />
             </h2>
             <div className="flex gap-5 justify-center items-center md:justify-start md:items-start mt-2">
               <a
