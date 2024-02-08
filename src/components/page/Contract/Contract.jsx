@@ -21,7 +21,7 @@ export default function Contract() {
     const mail = { from_name, from_mail, subject, message };
     console.log(mail);
     emailjs
-      .send("service_kcdoef8", "template_7rgbkeh", mail, "UmROyUsv9bz4ZDlfC")
+      .send("service_bqd9imc", "template_unz2u76", mail, "kjHPV65tmjNEiiXlh")
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
